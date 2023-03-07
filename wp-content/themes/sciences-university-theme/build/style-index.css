@@ -936,13 +936,13 @@ body.login {
   position: relative;
 }
 .page-bannerr {
-    background-color: #fff;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .page-banner-gallery {
   background-color: #797979;
@@ -2006,7 +2006,7 @@ form {
 
 /* gallery list style */
 .gallery-wrapper {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .gallery-wrapper .blog-image-style {
@@ -2088,7 +2088,7 @@ form {
 .gallery-wrapper .blog-btn {
   float:left;
   padding: 0.8%;
-  font-size: 14px;
+  font-size: 16px;
   background-color: green;
   color: white;
   width: 25px;
@@ -2108,7 +2108,7 @@ form {
 .gallery-wrapper .blog-btnred {
   float: left;
   padding: 0.8%;
-  font-size: 14px;
+  font-size: 15px;
   background-color: green;
   color: white;
   width: 25px;
@@ -2131,7 +2131,6 @@ form {
   background-color: green;
   color: rgb(39, 39, 39);
   transition: .2s;
-  font-weight: 600;
   margin-left: 60px;
   color: white;
   border-top-left-radius: 30px;
@@ -2209,6 +2208,9 @@ form {
   font-size: 14px;
   /* Change this to the desired font size */
 }
+.input-search[type="search"]:focus{
+  outline: none;
+}
 
 .search-button{
   border-top-right-radius: 30px;
@@ -2218,12 +2220,12 @@ form {
     height: 30px;
     color: green;
     border-left: none;
-   
-  
+    background-color: white;
 }
+
 .search-button:hover{
   background-color: green;
-    color: black;
+    color: white;
 }
 
 .pagination-list {

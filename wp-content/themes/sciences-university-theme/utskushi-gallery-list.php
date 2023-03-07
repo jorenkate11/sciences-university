@@ -27,8 +27,8 @@
                 'total'      => $max_page,
                 'format' => '?paged=%#%',
                 'mid_size'   => 1,
-                'prev_text'  => __('<i class="fa fa-arrow-left" aria-hidden="true"></i>'),
-                'next_text'  => __('<i class="fa fa-arrow-right" aria-hidden="true"></i>'),
+                'prev_text'  => __('<i class="fa fa-solid fa-chevron-left"></i>'),
+                'next_text'  => __('<i class="fa fa-solid fa-chevron-right"></i>'),
                 'type'       => 'block'
             ) );
         }
@@ -76,7 +76,7 @@
     </div>
     
     <!-- image slides -->
-    <!-- <div class="hero-slider">
+    <div class="hero-slider">
       <div data-glide-el="track" class="glide__track">
         <div class="glide__slides">
           <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/Fernando-Amorsolo.PNG')?>)">
@@ -114,7 +114,7 @@
         </div>
         <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]"></div>
       </div>
-    </div> -->
+    </div>
 
      <?php 
               $theParent = wp_get_post_parent_id(get_the_ID());
@@ -161,7 +161,7 @@
                                 <p><strong ><?=$artist_name_value;?> </strong></br>
                                 <?=$art_dimension;?> <?=$medium_value?></p> 
                                 <div class="blog-button">
-                                    <a href="javascript:;" class="blog-btn" onclick="editArtpost(<?=$post->ID?>)"><i class="fa fa-pencil" aria-hidden="true"></i></a> 
+                                    <a href="javascript:;" class="blog-btn" onclick="editArtpost(<?=$post->ID?>)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> 
                                     <a href="javascript:;" class="blog-btnred" onclick="deletePost('<?=$post->ID?>','<?=$post->post_title?>')"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                                 </div>
                         </div>
