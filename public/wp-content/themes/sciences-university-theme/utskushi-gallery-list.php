@@ -131,7 +131,7 @@
             $args = array(
                 'post_type'      => array('utskushi-gallery'),
                 'post_status'    => 'publish',
-                'posts_per_page' => 1,
+                'posts_per_page' => 3,
                 'orderby'        => 'date',
                 'sort_order'     => 'ASC',
                 'paged'          => $paged,

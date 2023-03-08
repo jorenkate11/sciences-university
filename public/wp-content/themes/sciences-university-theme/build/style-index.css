@@ -1830,7 +1830,6 @@ body.admin-bar .search-overlay {
 }
 .form-button .submit-button:hover {
     background-color: #49d367;
-  
     color:black;
 }
 
@@ -2032,17 +2031,15 @@ form {
 .gallery-wrapper ul li {
   background-color: white;
   width: 30%;
-  /* border: 1px solid rgb(235, 235, 235); */
   color: white;
-  /* border-radius: 5px; */
   margin-left: 1%;
   margin-bottom: 2%;
   position: relative;
   margin-right: 9px;
-  box-shadow: 0 0 8px 3px rgb(236, 236, 236);
 }
 .gallery-wrapper ul li:hover {
   transform: scale(1.1);
+    box-shadow: 0 0 8px 3px rgb(88, 88, 88);
 }
 
 .gallery-wrapper .blog-title {
@@ -2138,9 +2135,10 @@ form {
   width: 13%;
 }
 .gallery-button .create-button:hover {
-  border: 1px solid yellowgreen;
-  background-color: yellowgreen;
-  color: black;
+  border: 1px solid #57CD42;
+  background-color: #57CD42;
+  box-shadow: 0 1px 15px 1px #57CD42;
+  color: #002D00;
 }
 
 

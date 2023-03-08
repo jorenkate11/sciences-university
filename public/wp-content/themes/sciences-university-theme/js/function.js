@@ -73,7 +73,6 @@ function deletePost(id, ptitle){
               // Success Message
               swal("Delete", `Sucessfully deleted ${ptitle}`, "success");
               $('#post_item_'+id).remove();
-             
             } else {
               // Error message
              swal("Error", `Sorry, you are unable to delete ${ptitle}`, "error");
@@ -312,7 +311,7 @@ function addArtPost(e) {
               type: "success",
             },
             () => {
-              window.location.href = "/utskushi-gallery";
+              window.location.href = "/galleries";
             }
           );
         } else {
