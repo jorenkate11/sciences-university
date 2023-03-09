@@ -708,7 +708,7 @@ body.login {
   top: 0;
   left: 0;
   right: 0;
-  padding: 20px 0;
+  padding: 35px 0;
 }
 .site-header__avatar {
   position: absolute;
@@ -815,6 +815,8 @@ body.login {
     background-image: linear-gradient(#ccc, #333);
     position: absolute;
     width: 100%;
+    bottom: -20em;
+    padding: 0 0 10px 0;
 }
 .site-footer p {
   font-size: 0.9rem;
@@ -1002,8 +1004,6 @@ body.login {
   font-family: "Times New Roman";
   margin: 0 0 1rem 0;
 }
-
-
 @media (min-width: 530px) {
   .page-banner__title {
     font-size: 5rem;
@@ -2121,12 +2121,11 @@ form {
   box-shadow: 0 0 13px 5px rgba(224, 64, 64, 0.25);
 }
 
-.gallery-button .create-button {
+.gallery-header .create-button {
   border: 1px solid green;
   padding: 0.80%;
   font-size: 14px;
   background-color: green;
-  color: rgb(39, 39, 39);
   transition: .2s;
   margin-left: 60px;
   color: white;
@@ -2134,7 +2133,7 @@ form {
   border-bottom-right-radius: 30px;
   width: 13%;
 }
-.gallery-button .create-button:hover {
+.gallery-header .create-button:hover {
   border: 1px solid #57CD42;
   background-color: #57CD42;
   box-shadow: 0 1px 15px 1px #57CD42;
@@ -2142,13 +2141,13 @@ form {
 }
 
 
-.gallery-button .button-style {
+.gallery-header .button-style {
   display: flex;
   justify-content: end;
   padding: 0 60px 10px 0;
 }
 
-.gallery-button .featured-header {
+.gallery-header .featured-header {
   font-family: 'Lora', serif;
   font-size: 27px;
   color: #353535;
@@ -2156,7 +2155,7 @@ form {
   margin: 0;
   letter-spacing: 10px;
 }
-.gallery-button .featured-description {
+.gallery-header .featured-description {
   font-family: 'Lora', serif;
     font-size: 22px;
     color: #353535;
@@ -2249,12 +2248,67 @@ form {
   border: 1px solid #14721c;
 }
 
-.custom-alert.custom-alert-warning {
+.custom-alert-warning{
   margin: 80px 0 0 0;
   color: #E34234;
   font-size: 32px;
   text-align: center;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 1024px) {
+  .gallery-wrapper {
+    margin-top: 50px 0 0 0 !important;
+    padding: 0;
+  }
+  .gallery-wrapper ul {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .gallery-wrapper ul li {
+    width: 35% !important;
+  }
+  .container--narrow--gallery p {
+    font-size: 60px !important;
+  }
+  .input-search {
+    height: 50px !important;
+    width: 500px !important;
+  }
+  .input-search::placeholder {
+    font-size: 18px !important;
+  }
+  .search-button {
+    width: 40px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+  }
+  .gallery-header{
+    font-size: 20px !important;
+  }
+  .gallery-header .create-button {
+    width: 200px !important;
+    margin: 20px 0 0 0 !important; 
+    font-size: 20px !important;
+  }
+  .gallery-header .featured-header {
+    font-size: 34px !important;
+  }
+  .gallery-header .featured-description {
+    font-size: 30px !important;
+  }
+  .headline--gallery-small {
+      font-size: 24px !important;
+  }
+  .custom-search-wrapper {
+    margin: 10px 0 0 0 !important;
+  }
+  .pagination-list {
+    margin: 20px 0 0 0 !important;
+  } 
+  .hero-slider {
+      width: 800px !important;
+    }
 }
 

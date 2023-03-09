@@ -2,9 +2,7 @@
 /* 
     Template Name: Utskushi gallery post
 */
-
  get_header();?>
-
     <!-- Search code -->
     <?php
         $paged                   = 1;
@@ -46,7 +44,6 @@
     $posts = $query->posts;
     ?>
     
-
     <div class="page-banner-headline" >
         <div class="page-banner__header-background-image" style="background-image: url(<?=get_theme_file_uri('/images/narrow-road-surrounded-by-green-trees-windsor-england.jpg');?>)"></div>
         <div class="page-banner__content container container--narrow--gallery">
@@ -67,7 +64,7 @@
     </div>
     
    
-    <div class="gallery-button">
+    <div class="gallery-header">
         <div class="button-style">
             <button onclick="insertPostModal()" class="create-button"><i class="fa fa-plus" aria-hidden="true"></i> Add Painting</button>
         </div>
@@ -277,7 +274,7 @@
             </div>
 
         <?php } else{ ?>
-            <div class="custom-alert custom-alert-warning">
+            <div class="custom-alert-warning">
                 <p> <i class="fa fa-frown-o" aria-hidden="true"></i> </br> Sorry, we don't have any available posts for now.</p>
             </div>
         <?php } ?>
